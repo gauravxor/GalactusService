@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>com.clumsycoder</groupId>
-    <artifactId>GalactusService</artifactId>
+    <artifactId>galactus-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>GalactusService</name>
     <description>API Gateway service for ControlShift</description>
