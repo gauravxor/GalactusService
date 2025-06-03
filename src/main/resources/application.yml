@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: GalactusService
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: NucleusService
+              uri: http://localhost:9000
+              predicates:
+                - Path=/api/player/**
+            - id: OdinService
+              uri: http://localhost:9001
+              predicates:
+                - Path=/api/auth/**
+server:
+  port: 8000
